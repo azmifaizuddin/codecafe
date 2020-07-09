@@ -12,7 +12,13 @@
 */
 
 Route::get('/', function () {
+    return view('home.index');
+});
+Route::get('/masuk', function () {
     return view('auth.login');
+});
+Route::get('/daftar', function () {
+    return view('auth.register');
 });
 
 //auth
