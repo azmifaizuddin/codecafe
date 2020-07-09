@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layouts.master');
+Route::get('/home', function () {
+    return view('home.index');
 });
