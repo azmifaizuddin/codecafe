@@ -27,14 +27,10 @@ class HomeController extends Controller
         return view('home.index');
     }
 
-    public function logout(Request $request) {
-    $request->session()->invalidate();
-    Auth::logout();
-    return redirect('/home');
-    }
-
-    public function forum()
+    public function logout(Request $request)
     {
-        return view('forum.index');
+        $request->session()->invalidate();
+        Auth::logout();
+        return redirect('/home');
     }
 }

@@ -49,7 +49,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!-- Left navbar links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="index3.html" class="nav-link btn-nav h-75">Forum</a>
+                            <a href="{{ url('/forum')}}" class="nav-link btn-nav h-75">Forum</a>
                         </li>
                     </ul>
 
@@ -76,7 +76,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     @endif
                     @else
                     <li class="nav-item">
-                        <a href="#" class="btn-masuk" style="color: grey;">Hi, {{ Auth::user()->name }}</a>
+                        <a href="{{ url('/dashboard')}}" class="btn-masuk" style="color: grey;">Hi, {{ Auth::user()->name }}</a>
                     </li>
 
                     <li class="nav-item">
