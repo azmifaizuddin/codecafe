@@ -1,3 +1,18 @@
+.bg-1 {
+    background-color: #59473c !important;
+    border-color: #59473c !important;
+}
+.bg-2 {
+    background-color: #b8733a;
+    color: white;
+}
+.aktif {
+    color: #b8733a;
+}
+.aktif::before {
+    content: " \25CF";
+    font-size: 15px;
+}
 /* btn */
 .btn-link-coklat {
     background-color: #b8733a;
