@@ -11,6 +11,14 @@
 |
 */
 
+use App\Http\Controllers\questionsController;
+
 Route::get('/', function () {
     return view('layouts.master');
 });
+
+Route::get('/questions', 'questionsController@index');
+Route::get('/questions/create', 'questionsController@create');
+Route::post('/questions', 'questionsController@store');
+Route::get('/answers/{id}', 'answersController@create');
+Route::post('/answers/{id}', 'answersController@store');
