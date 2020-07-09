@@ -31,5 +31,10 @@ class HomeController extends Controller
     $request->session()->invalidate();
     Auth::logout();
     return redirect('/home');
-}
+    }
+
+    public function forum()
+    {
+        return view('forum.index');
+    }
 }

@@ -1,0 +1,101 @@
+.bg-1 {
+    background-color: #59473c !important;
+    border-color: #59473c !important;
+}
+.bg-2 {
+    background-color: #b8733a;
+    color: white;
+}
+.aktif {
+    color: #b8733a;
+}
+.aktif::before {
+    content: " \25CF";
+    font-size: 15px;
+}
+/* btn */
+.btn-link-coklat {
+    background-color: #b8733a;
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    border-radius: 3px;
+}
+.btn-link-coklat:hover {
+    background-color: #bb641e;
+}
+/* nav */
+.btn-nav {
+    background-color: #b8733a;
+    color: white !important;
+    font-family: "Poppins", sans-serif;
+    border-radius: 30px;
+    display: inline;
+    padding: 6px 16px !important;
+    white-space: nowrap;
+}
+.btn-nav:hover {
+    background-color: #bb641e;
+}
+
+.btn-daftar,
+.btn-masuk {
+    display: inline;
+    padding: 6px 16px !important;
+    white-space: nowrap;
+}
+
+/* Search Box */
+.has-search .form-control {
+    padding-left: 2.375rem;
+    width: 630px;
+    height: 35px;
+    border-radius: 30px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/* Hero */
+.hero {
+    background-image: url("http://onnocenter.or.id/images/bg/kontak_optimized.png");
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding-top: 10em !important;
+    padding-bottom: 12em !important;
+    position: relative;
+    z-index: 9999;
+}
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #34302c;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+/* card */
+.card-judul {
+    font-family: "Poppins", sans-serif;
+    text-align: center !important;
+    font-size: 21px;
+}
+.card-img-top {
+    width: 120px;
+    height: 120px;
+    display: flex !important;
+}

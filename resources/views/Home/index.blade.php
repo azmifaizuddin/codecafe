@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>AdminLTE 3 | Top Navigation</title>
+    <title>CodeCofe | Beranda</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('/adminLTE/plugins/fontawesome-free/css/all.min.css')}}">
@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Slab&display=swap"
         rel="stylesheet">
     {{-- My Css --}}
-    <link rel="stylesheet" href="{{ asset('/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('/css/style.home.css')}}">
 </head>
 
 <body class="hold-transition layout-top-nav">
