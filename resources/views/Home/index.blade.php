@@ -23,7 +23,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Roboto+Slab&display=swap" rel="stylesheet">
   {{-- My Css --}}
-<link rel="stylesheet" href="{{ asset('/css/style.css')}}">
+<link rel="stylesheet" href="{{ asset('/css/style.home.css')}}">
 </head>
 <body class="hold-transition layout-top-nav">
 <div class="wrapper">
@@ -44,7 +44,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="index3.html" class="nav-link btn-nav h-75">Forum</a>
+            <a href="{{ url('/forum')}}" class="nav-link btn-nav h-75">Forum</a>
           </li>
         </ul>
 

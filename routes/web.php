@@ -20,6 +20,7 @@ Route::get('/masuk', function () {
 Route::get('/daftar', function () {
     return view('auth.register');
 });
+Route::get('/forum', 'ForumController@index');
 
 //auth
 
