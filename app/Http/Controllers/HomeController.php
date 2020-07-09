@@ -31,6 +31,6 @@ class HomeController extends Controller
     {
         $request->session()->invalidate();
         Auth::logout();
-        return redirect('/home');
+        return view('home.index');
     }
 }
