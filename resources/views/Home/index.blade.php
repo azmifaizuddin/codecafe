@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>CodeCofe | Beranda</title>
+    <title>CodeCafe | Beranda</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ asset('/adminLTE/plugins/fontawesome-free/css/all.min.css')}}">
@@ -179,7 +179,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-        
+
         <!-- Main Footer -->
         <footer class="main-footer">
             <!-- To the right -->
