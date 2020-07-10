@@ -18,10 +18,13 @@
             </div>
             <div class="col-9">
               <div class="row">
+                @foreach($tags as $key => $question)
+                <?php $tag = explode(' ',$question->tag); ?>
+                @for ($i=0; $i < str_word_count($question->tag); $i++)
                 <div class="col-md-3 col-sm-6 col-12">
                   <div class="info-box">
                     <div class="info-box-content">
-                      <button class="btn btn-xs btn-primary">Javascript</button>
+                      <a href="/tag/{{$tag[$i]}}" class="btn btn-xs btn-primary">{{$tag[$i]}}</a>
                       <span class="info-box-text text-center">Pertanyaan :</span>
                       <span class="info-box-number text-center">1,410</span>
                     </div>
@@ -29,83 +32,8 @@
                   </div>
                   <!-- /.info-box -->
                 </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                  <div class="info-box">
-                    <div class="info-box-content">
-                      <button class="btn btn-xs btn-primary">Ruby</button>
-                      <span class="info-box-text text-center">Pertanyaan :</span>
-                      <span class="info-box-number text-center">1,410</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                  </div>
-                  <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                  <div class="info-box">
-                    <div class="info-box-content">
-                      <button class="btn btn-xs btn-primary">Node.js</button>
-                      <span class="info-box-text text-center">Pertanyaan :</span>
-                      <span class="info-box-number text-center">1,410</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                  </div>
-                  <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                  <div class="info-box">
-                    <div class="info-box-content">
-                      <button class="btn btn-xs btn-primary">Laravel</button>
-                      <span class="info-box-text text-center">Pertanyaan :</span>
-                      <span class="info-box-number text-center">1,410</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                  </div>
-                  <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                  <div class="info-box">
-                    <div class="info-box-content">
-                      <button class="btn btn-xs btn-primary">Bootstrap</button>
-                      <span class="info-box-text text-center">Pertanyaan :</span>
-                      <span class="info-box-number text-center">1,410</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                  </div>
-                  <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                  <div class="info-box">
-                    <div class="info-box-content">
-                      <button class="btn btn-xs btn-primary">css</button>
-                      <span class="info-box-text text-center">Pertanyaan :</span>
-                      <span class="info-box-number text-center">1,410</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                  </div>
-                  <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                  <div class="info-box">
-                    <div class="info-box-content">
-                      <button class="btn btn-xs btn-primary">Php</button>
-                      <span class="info-box-text text-center">Pertanyaan :</span>
-                      <span class="info-box-number text-center">1,410</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                  </div>
-                  <!-- /.info-box -->
-                </div>
-                <div class="col-md-3 col-sm-6 col-12">
-                  <div class="info-box">
-                    <div class="info-box-content">
-                      <button class="btn btn-xs btn-primary">Html</button>
-                      <span class="info-box-text text-center">Pertanyaan :</span>
-                      <span class="info-box-number text-center">1,410</span>
-                    </div>
-                    <!-- /.info-box-content -->
-                  </div>
-                  <!-- /.info-box -->
-                </div>
+                @endfor
+                @endforeach
             </div>
             </div>
         </div>

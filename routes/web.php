@@ -29,9 +29,10 @@ Route::get('/masuk', function () {
 Route::get('/daftar', function () {
     return view('auth.register');
 });
-Route::get('/forum', 'ForumController@index');
-Route::get('/pengguna', 'UserController@index');
-Route::get('/tag', 'TagController@index');
+Route::get('/forum', 'ForumController@question');
+Route::get('/pengguna', 'ForumController@user');
+Route::get('/tag', 'ForumController@tag');
+Route::get('/tag/{tag}', 'ForumController@tag_view');
 
 //auth
 
