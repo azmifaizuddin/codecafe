@@ -64,7 +64,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                 <!-- Right navbar links -->
                 <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-                    <!-- Notifications Dropdown Menu -->
+                    <!-- Login, LogOut & Register -->
                     @guest
                     <li class="nav-item">
                         <a href="{{ url('/masuk')}}" class=" btn btn-primary btn-masuk mr-1">Masuk</a>
@@ -76,9 +76,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     @endif
                     @else
                     <li class="nav-item">
-                        <a href="{{ url('/dashboard')}}" class="btn-masuk" style="color: grey;">Hi, {{ Auth::user()->name }}</a>
+                        <a href="{{ url('/dashboard')}}" class="btn-masuk" style="color: grey;"><i class="fa fa-user" aria-hidden="true">&nbsp;</i> Hi, {{ Auth::user()->name }}</a>
                     </li>
-
                     <li class="nav-item">
                         <a href="{{ url('/logout')}}"
                             class="btn btn-block btn-primary btn-daftar btn-sm ml-2 " onclick="return confirm('Apakah anda yakin ingin keluar ?')" >Keluar</a>
@@ -91,13 +90,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <!-- Main content -->
             <div class="jumbotron hero text-center">
                 <h1 class="display-4">Ngobrol, Ngoding, Nongkrong dan Ngopi</h1>
                 <p class="lead">Forum Developer dari Developer, untuk Developer. Karya anak bangsa</p>
                 <p>Lebih asyik kalau sambil ngopi</p>
                 <a class="btn btn-nav btn-lg" href="#" role="button">Buat Pertanyaan</a>
             </div>
+            <!-- Main content -->
             <div class="content">
                 <div class="container">
                     <div class="row d-flex justify-content-center">

@@ -67,7 +67,7 @@
                     @endif
                     @else
                     <li class="nav-item">
-                        <a href="{{ url('/dashboard')}}" class="btn-masuk" style="color: grey;">Hi, {{ Auth::user()->name }}</a>
+                        <a href="{{ url('/dashboard')}}" class="btn-masuk" style="color: grey;"><i class="fa fa-user" aria-hidden="true">&nbsp;</i>Hi, {{ Auth::user()->name }}</a>
                     </li>
 
                     <li class="nav-item">
