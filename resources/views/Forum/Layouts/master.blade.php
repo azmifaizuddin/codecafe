@@ -50,10 +50,10 @@
                     </ul>
 
                     <!-- SEARCH FORM -->
-                    <form class="form-inline ml-0 ml-md-3">
+                    <form action="/forum" name="cari" method="GET" class="form-inline ml-0 ml-md-3">
                         <div class="form-group has-search">
-                            <span class="fa fa-search form-control-feedback"></span>
-                            <input type="text" class="form-control" placeholder="Search">
+                            <span type="submit" aria-hidden="true" onclick="document.cari.submit()" class="fa fa-search form-control-feedback"></span>
+                            <input type="text" name="keyword" class="form-control" placeholder="Search">
                         </div>
                     </form>
                 </div>

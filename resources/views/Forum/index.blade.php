@@ -20,7 +20,7 @@
               @foreach($questions as $key => $question)
                 <div class="card text-truncate">
                     <div class="card-header"><a href="">
-                      {{$question->title}}
+                      <h5>{{$question->title}}</h5>
                     </a>
                     </div>
                     <div class="card-body" >
