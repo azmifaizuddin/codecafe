@@ -9,7 +9,7 @@ class ForumController extends Controller
 {
     public function question()
     {
-        $questions = ForumModel::all();
+        $questions = ForumModel::paginate(5);
         return view('forum.index', compact('questions'));
     }
 
