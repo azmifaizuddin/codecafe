@@ -17,19 +17,21 @@
                   </div>
             </div>
             <div class="col-9">
+              @foreach($questions as $key => $question)
                 <div class="card text-truncate">
                     <div class="card-header"><a href="">
-                      Judul Pertanyaan Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      {{$question->title}}
                     </a>
                     </div>
                     <div class="card-body" >
-                      <p class="card-text text-truncate" style="width: 100%">With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci tempore, culpa pariatur natus, iste unde porro nam autem suscipit ratione explicabo assumenda vel? Vitae, obcaecati perspiciatis. Animi dolorum optio repellat.</p>
-                      <a href="#" class="btn btn-xs btn-primary">Tag</a>
-                      <a href="#" class="btn btn-xs btn-primary">php</a>
-                      <a href="#" class="btn btn-xs btn-primary">html</a>
+                      <p class="card-text text-truncate" style="width: 100%">{{$question->content}}</p>
+                      <?php $tag = explode(' ',$question->tag); ?>
+                      @for ($i=0; $i < str_word_count($question->tag); $i++)
+                      <a href="/tag/{{$tag[$i]}}" class="btn btn-xs btn-primary">{{$tag[$i]}}</a>
+                      @endfor
                     </div>
                     <div class="card-footer text-muted">
-                        <i class="far fa-clock" data-toggle="tooltip" data-placement="top" title="Dibuat">&nbsp;</i> 2 hari yang lalu 
+                        <i class="far fa-clock" data-toggle="tooltip" data-placement="top" title="Dibuat">&nbsp;</i> {{$question->created_at}}
                         <span class="float-right">
                         <i class="fas fa-poll" data-toggle="tooltip" data-placement="top" title="Vote">&nbsp;</i> 7
                         </span>
@@ -37,8 +39,8 @@
                         <i class="fas fa-comments" data-toggle="tooltip" data-placement="top" title="Jawaban">&nbsp;</i> 16
                         </span>
                       </div>
-                    
                   </div>
+                  @endforeach
             </div>
         </div>
     </div>

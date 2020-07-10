@@ -76,7 +76,7 @@
                     </li>
                     <li class="nav-item">
                         <a href="{{ url('/logout')}}"
-                            class="btn btn-block btn-primary btn-daftar btn-sm ml-2 ">Logout</a>
+                            class="btn btn-block btn-primary btn-daftar btn-sm ml-2 ">Keluar</a>
                     </li>
                     @endguest
                 </ul>
