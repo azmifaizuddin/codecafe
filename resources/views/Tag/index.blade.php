@@ -18,92 +18,94 @@
             </div>
             <div class="col-9">
               <div class="row">
-              <div class="col-md-5">
-                <!-- Widget: user widget style 1 -->
-                <div class="card card-widget widget-user">
-                  <!-- Add the bg color to the header using any of the bg-* classes -->
-                  <div class="widget-user-header bg-info">
-                    <h3 class="widget-user-username">Alexander Pierce</h3>
-                    <h5 class="widget-user-desc">Founder &amp; CEO</h5>
-                  </div>
-                  <div class="widget-user-image">
-                    <img class="img-circle elevation-2" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="User Avatar">
-                  </div>
-                  <div class="card-footer">
-                    <div class="row">
-                      <div class="col-sm-4 border-right">
-                        <div class="description-block">
-                          <h5 class="description-header">897</h5>
-                          <span class="description-text">Jawaban</span>
-                        </div>
-                        <!-- /.description-block -->
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-4 border-right">
-                        <div class="description-block">
-                          <h5 class="description-header">13,000</h5>
-                          <span class="description-text">Poin</span>
-                        </div>
-                        <!-- /.description-block -->
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-4">
-                        <div class="description-block">
-                          <h5 class="description-header">52</h5>
-                          <span class="description-text">Pertanyaan</span>
-                        </div>
-                        <!-- /.description-block -->
-                      </div>
-                      <!-- /.col -->
+                <div class="col-md-3 col-sm-6 col-12">
+                  <div class="info-box">
+                    <div class="info-box-content">
+                      <button class="btn btn-xs btn-primary">Javascript</button>
+                      <span class="info-box-text text-center">Pertanyaan :</span>
+                      <span class="info-box-number text-center">1,410</span>
                     </div>
-                    <!-- /.row -->
+                    <!-- /.info-box-content -->
                   </div>
+                  <!-- /.info-box -->
                 </div>
-                <!-- /.widget-user -->
-              </div>
-              <div class="col-md-5">
-                <!-- Widget: user widget style 1 -->
-                <div class="card card-widget widget-user">
-                  <!-- Add the bg color to the header using any of the bg-* classes -->
-                  <div class="widget-user-header bg-info">
-                    <h3 class="widget-user-username">Alexander Pierce</h3>
-                    <h5 class="widget-user-desc">Founder &amp; CEO</h5>
-                  </div>
-                  <div class="widget-user-image">
-                    <img class="img-circle elevation-2" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="User Avatar">
-                  </div>
-                  <div class="card-footer">
-                    <div class="row">
-                      <div class="col-sm-4 border-right">
-                        <div class="description-block">
-                          <h5 class="description-header">3,200</h5>
-                          <span class="description-text">Jawaban</span>
-                        </div>
-                        <!-- /.description-block -->
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-4 border-right">
-                        <div class="description-block">
-                          <h5 class="description-header">981,148</h5>
-                          <span class="description-text">Poin</span>
-                        </div>
-                        <!-- /.description-block -->
-                      </div>
-                      <!-- /.col -->
-                      <div class="col-sm-4">
-                        <div class="description-block">
-                          <h5 class="description-header">35</h5>
-                          <span class="description-text">pertanyaan</span>
-                        </div>
-                        <!-- /.description-block -->
-                      </div>
-                      <!-- /.col -->
+                <div class="col-md-3 col-sm-6 col-12">
+                  <div class="info-box">
+                    <div class="info-box-content">
+                      <button class="btn btn-xs btn-primary">Ruby</button>
+                      <span class="info-box-text text-center">Pertanyaan :</span>
+                      <span class="info-box-number text-center">1,410</span>
                     </div>
-                    <!-- /.row -->
+                    <!-- /.info-box-content -->
                   </div>
+                  <!-- /.info-box -->
                 </div>
-                <!-- /.widget-user -->
-              </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                  <div class="info-box">
+                    <div class="info-box-content">
+                      <button class="btn btn-xs btn-primary">Node.js</button>
+                      <span class="info-box-text text-center">Pertanyaan :</span>
+                      <span class="info-box-number text-center">1,410</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                  <div class="info-box">
+                    <div class="info-box-content">
+                      <button class="btn btn-xs btn-primary">Laravel</button>
+                      <span class="info-box-text text-center">Pertanyaan :</span>
+                      <span class="info-box-number text-center">1,410</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                  <div class="info-box">
+                    <div class="info-box-content">
+                      <button class="btn btn-xs btn-primary">Bootstrap</button>
+                      <span class="info-box-text text-center">Pertanyaan :</span>
+                      <span class="info-box-number text-center">1,410</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                  <div class="info-box">
+                    <div class="info-box-content">
+                      <button class="btn btn-xs btn-primary">css</button>
+                      <span class="info-box-text text-center">Pertanyaan :</span>
+                      <span class="info-box-number text-center">1,410</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                  <div class="info-box">
+                    <div class="info-box-content">
+                      <button class="btn btn-xs btn-primary">Php</button>
+                      <span class="info-box-text text-center">Pertanyaan :</span>
+                      <span class="info-box-number text-center">1,410</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
+                <div class="col-md-3 col-sm-6 col-12">
+                  <div class="info-box">
+                    <div class="info-box-content">
+                      <button class="btn btn-xs btn-primary">Html</button>
+                      <span class="info-box-text text-center">Pertanyaan :</span>
+                      <span class="info-box-number text-center">1,410</span>
+                    </div>
+                    <!-- /.info-box-content -->
+                  </div>
+                  <!-- /.info-box -->
+                </div>
             </div>
             </div>
         </div>

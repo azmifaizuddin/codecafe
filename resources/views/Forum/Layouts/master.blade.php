@@ -56,12 +56,25 @@
       <!-- Right navbar links -->
       <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
         <!-- Notifications Dropdown Menu -->
-        <li class="nav-item">
-            <a href="{{ url('/masuk')}}" class=" btn btn-primary btn-masuk mr-1">Masuk</a>
-        </li>
-        <li class="nav-item">
-            <a href="{{ url('/daftar')}}" class="btn btn-block btn-outline-primary btn-daftar">Daftar</a>
-        </li>
+        @guest
+                    <li class="nav-item">
+                        <a href="{{ url('/masuk')}}" class=" btn btn-primary btn-masuk mr-1">Masuk</a>
+                    </li>
+                    @if (Route::has('register'))
+                    <li class="nav-item">
+                        <a href="{{ url('/daftar')}}" class="btn btn-block btn-outline-primary btn-daftar">Daftar</a>
+                    </li>
+                    @endif
+                    @else
+                    <li class="nav-item">
+                        <a href="{{ url('/dashboard')}}" class="btn-masuk" style="color: grey;">Hi, {{ Auth::user()->name }}</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="{{ url('/logout')}}"
+                            class="btn btn-block btn-primary btn-daftar btn-sm ml-2 " onclick="return confirm('Apakah anda yakin ingin keluar ?')" >Keluar</a>
+                    </li>
+                    @endguest
       </ul>
     </div>
   </nav>

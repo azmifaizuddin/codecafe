@@ -81,7 +81,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                     <li class="nav-item">
                         <a href="{{ url('/logout')}}"
-                            class="btn btn-block btn-primary btn-daftar btn-sm ml-2 ">Logout</a>
+                            class="btn btn-block btn-primary btn-daftar btn-sm ml-2 " onclick="return confirm('Apakah anda yakin ingin keluar ?')" >Keluar</a>
                     </li>
                     @endguest
                 </ul>
@@ -179,8 +179,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
-
-
+        
         <!-- Main Footer -->
         <footer class="main-footer">
             <!-- To the right -->
@@ -203,7 +202,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{ asset('/adminLTE/dist/js/adminlte.min.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('/adminLTE/dist/js/demo.js')}}"></script>
-    @stack('scripts')
 </body>
 
 </html>
