@@ -30,6 +30,8 @@ Route::get('/daftar', function () {
     return view('auth.register');
 });
 Route::get('/forum', 'ForumController@index');
+Route::get('/pengguna', 'UserController@index');
+Route::get('/tag', 'TagController@index');
 
 //auth
 
