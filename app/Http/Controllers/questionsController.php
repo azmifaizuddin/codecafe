@@ -10,7 +10,7 @@ class questionsController extends Controller
     public function index(){
         $questions = questionsModel::all();
        // dd($questions);
-        return view('questions.index', compact('questions'));
+        return view('Forum.index', compact('questions'));
 
     }
 

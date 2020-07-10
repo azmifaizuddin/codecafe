@@ -1,4 +1,4 @@
-@extends('layouts.master');
+@extends('forum/layouts/master');
 
 @section('content')
 
@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label for="tag">tag:</label>
-                <input type="number" class="form-control" placeholder="tag" name="tag" id="tag">
+                <input type="text" class="form-control" placeholder="tag" name="tag" id="tag">
             </div>
 
             <button type="submit" class="btn btn-default">Submit</button>

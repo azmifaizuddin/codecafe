@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\questionsModel;
 use Illuminate\Http\Request;
 
 class ForumController extends Controller
@@ -11,9 +12,10 @@ class ForumController extends Controller
     // {
     //     $this->middleware('auth');
     // }
-    
+
     public function index()
     {
-        return view('forum.index');
+        $questions = questionsModel::all();
+        return view('forum.index', compact('questions'));
     }
 }
