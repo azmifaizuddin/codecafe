@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\questionsModel;
 use Illuminate\Http\Request;
+use Auth;
 
 class questionsController extends Controller
 {
@@ -11,11 +12,10 @@ class questionsController extends Controller
         $questions = questionsModel::all();
        // dd($questions);
         return view('questions.index', compact('questions'));
-
     }
 
     public function create(){
-        return view('questions.formQuestion');
+        return view('question.form');
     }
 
     public function store(Request $request){
@@ -24,7 +24,6 @@ class questionsController extends Controller
             "content" => $request["content"],
             "tag" => $request["tag"]
         ]);
-
         return redirect('/questions');
     }
 }
