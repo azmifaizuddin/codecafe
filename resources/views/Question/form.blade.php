@@ -60,8 +60,8 @@
     var text_max = 6000;
     $('#count_message').html('0 / ' + text_max);
 
-    $('#isi').keyup(function() {
-        var text_length = $('#isi').val().length;
+    $('#content').keyup(function() {
+        var text_length = $('#content').val().length;
         var text_remaining = text_max - text_length;
 
         $('#count_message').html(text_length + ' / ' + text_max);
