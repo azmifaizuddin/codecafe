@@ -50,10 +50,10 @@
                     </ul>
 
                     <!-- SEARCH FORM -->
-                    <form class="form-inline ml-0 ml-md-3">
+                    <form action="/forum" name="cari" method="GET" class="form-inline ml-0 ml-md-3">
                         <div class="form-group has-search">
-                            <span class="fa fa-search form-control-feedback"></span>
-                            <input type="text" class="form-control" placeholder="Search">
+                            <span type="submit" aria-hidden="true" onclick="document.cari.submit()" class="fa fa-search form-control-feedback"></span>
+                            <input type="text" name="keyword" class="form-control" placeholder="Search">
                         </div>
                     </form>
                 </div>
@@ -72,13 +72,11 @@
                     @endif
                     @else
                     <li class="nav-item">
-                        <a href="{{ url('/dashboard')}}" class="btn-masuk" style="color: grey;">Hi,
-                            {{ Auth::user()->name }}</a>
+                        <a href="{{ url('/dashboard')}}" class="btn-masuk" style="color: grey;"><i class="fa fa-user" aria-hidden="true">&nbsp;</i>Hi, {{ Auth::user()->name }}</a>
                     </li>
-
                     <li class="nav-item">
                         <a href="{{ url('/logout')}}"
-                            class="btn btn-block btn-primary btn-daftar btn-sm ml-2 ">Logout</a>
+                            class="btn btn-block btn-primary btn-daftar btn-sm ml-2 ">Keluar</a>
                     </li>
                     @endguest
                 </ul>

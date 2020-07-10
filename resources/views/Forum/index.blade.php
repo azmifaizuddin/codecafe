@@ -20,10 +20,18 @@
                 </div>
             </div>
             <div class="col-9">
+              @foreach($questions as $key => $question)
                 <div class="card text-truncate">
                     <div class="card-header"><a href="">
-                        List Pertanyaan
-                        </a>
+                      <h5>{{$question->title}}</h5>
+                    </a>
+                    </div>
+                    <div class="card-body" >
+                      <p class="card-text text-truncate" style="width: 100%">{{$question->content}}</p>
+                      <?php $tag = explode(' ',$question->tag); ?>
+                      @for ($i=0; $i < str_word_count($question->tag); $i++)
+                      <a href="/tag/{{$tag[$i]}}" class="btn btn-xs btn-primary">{{$tag[$i]}}</a>
+                      @endfor
                     </div>
                     @foreach ($questions as $key => $question)
 
@@ -36,7 +44,7 @@
                     @endforeach
 
                     <div class="card-footer text-muted">
-                        <i class="far fa-clock" data-toggle="tooltip" data-placement="top" title="Dibuat">&nbsp;</i> 2 hari yang lalu
+                        <i class="far fa-clock" data-toggle="tooltip" data-placement="top" title="Dibuat">&nbsp;</i> {{$question->created_at}}
                         <span class="float-right">
                         <i class="fas fa-poll" data-toggle="tooltip" data-placement="top" title="Vote">&nbsp;</i> 7
                         </span>
@@ -44,11 +52,10 @@
                         <i class="fas fa-comments" data-toggle="tooltip" data-placement="top" title="Jawaban">&nbsp;</i> 16
                         </span>
                       </div>
-
                   </div>
-
-                </div>
-             </div>
+                  @endforeach
+                  {{ $questions->links() }}
+            </div>
         </div>
     </div>
 </div><br>

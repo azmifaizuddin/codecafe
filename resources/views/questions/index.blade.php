@@ -1,4 +1,4 @@
-@extends('forum/layouts/master')
+@extends('forum.layouts.master')
 
 @section('content')
 <table class="table table-dark">

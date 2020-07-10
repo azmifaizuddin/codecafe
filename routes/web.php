@@ -12,6 +12,8 @@
 */
 
 use App\Http\Controllers\questionsController;
+use App\questionsModel;
+use Spatie\QueryBuilder\QueryBuilder;
 
 Route::get('/', function () {
     return view('home.index');
@@ -29,9 +31,12 @@ Route::get('/masuk', function () {
 Route::get('/daftar', function () {
     return view('auth.register');
 });
-Route::get('/forum', 'ForumController@index');
-Route::get('/pengguna', 'UserController@index');
-Route::get('/tag', 'TagController@index');
+Route::get('/forum', 'ForumController@question');
+Route::get('/forum', 'ForumController@cari');
+
+Route::get('/pengguna', 'ForumController@user');
+Route::get('/tag', 'ForumController@tag');
+Route::get('/tag/{tag}', 'ForumController@tag_view');
 
 //auth
 
