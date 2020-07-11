@@ -8,6 +8,11 @@ use Auth;
 
 class questionsController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+    
     public function index(){
         $questions = questionsModel::all();
        // dd($questions);
