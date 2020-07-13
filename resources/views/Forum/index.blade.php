@@ -22,7 +22,7 @@
             <div class="col-9">
               @foreach($questions as $key => $question)
                 <div class="card text-truncate">
-                    <div class="card-header"><a href="">
+                    <div class="card-header"><a href="/pertanyaan/{{$question->id}}">
                       <h5>{{$question->title}}</h5>
                     </a>
                     </div>

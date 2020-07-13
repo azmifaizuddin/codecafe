@@ -11,21 +11,25 @@ class answersModel extends Model
     protected $fillable = ["content", "question_id"];
 
 
-    public static function find_by_id($id){
-        $question = DB::table('questions')->where('id', $id)->first();
-        return $question;
+    public $timestamps = true;
+
+    public static function get_all()
+    {
+        $answers = DB::table('answers')->get();
+        return $answers;
     }
 
-    public static function simpan($request){
-        $new_answer = new answersModel;
-        $new_answer->content = $request->content;
-        $new_answer->question_id = $request->question_id;
-
-        $new_answer->save();
+    public static function submit($data)
+    {
+        // dd($data);
+        unset($data["_token"]);
+        $new_answer = DB::table('answers')->insert($data);
         return $new_answer;
     }
 
-    public function question(){
-        return $this->belongsTo('App\questionsModel');
+    public static function showById($pertanyaan_id)
+    {
+        $answer = DB::table('answers')->where('question_id', $pertanyaan_id)->first();
+        return $answer;
     }
 }

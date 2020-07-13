@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 class AddUserIdOnQuestionsAndAnswers extends Migration
 {
@@ -15,14 +16,13 @@ class AddUserIdOnQuestionsAndAnswers extends Migration
     {
         Schema::table('questions', function (Blueprint $table) {
             $table->unsignedBigInteger('user_id')->nullable();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('user_id')->references('id')->on('users')->constrained()->onDelete('cascade');;
         });
 
         Schema::table('answers', function (Blueprint $table) {
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('user_id')->references('id')->on('users');
         });
-
     }
 
     /**
@@ -41,6 +41,5 @@ class AddUserIdOnQuestionsAndAnswers extends Migration
             $table->dropForeign(['users_id']);
             $table->dropColumn(['users_id']);
         });
-
     }
 }

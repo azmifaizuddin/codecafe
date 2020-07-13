@@ -13,18 +13,18 @@
                     </a>
                     <a href="{{ url('/forum')}}" class="list-group-item list-group-item-action">Pertanyaan <span class="{{ (request()->is('forum')) ? 'aktif' : '' }}"></span></a>
                     <a href="{{ url('/pengguna')}}" class="list-group-item list-group-item-action">Pengguna <span class="{{ (request()->is('pengguna')) ? 'aktif' : '' }}"></span></a>
-                    <a href="{{ url('/tag')}}" class="list-group-item list-group-item-action">Tag <span class="{{ (request()->is('tag')) ? 'aktif' : '' }}"></span></a>
+                    <a href="{{ url('/category')}}" class="list-group-item list-group-item-action">Kategori <span class="{{ (request()->is('tag')) ? 'aktif' : '' }}"></span></a>
                   </div>
             </div>
             <div class="col-9">
               <div class="row">
-                @foreach($tags as $key => $question)
-                <?php $tag = explode(' ',$question->tag); ?>
-                @for ($i=0; $i < str_word_count($question->tag); $i++)
+                @foreach($categories as $key => $question)
+                <?php $tag = explode(' ',$question->category); ?>
+                @for ($i=0; $i < str_word_count($question->category); $i++)
                 <div class="col-md-3 col-sm-6 col-12">
                   <div class="info-box">
                     <div class="info-box-content">
-                      <a href="/tag/{{$tag[$i]}}" class="btn btn-xs btn-primary">{{$tag[$i]}}</a>
+                      <a href="/tag/{{$categories[$i]}}" class="btn btn-xs btn-primary">{{$categories[$i]}}</a>
                       <span class="info-box-text text-center">Pertanyaan :</span>
                       <span class="info-box-number text-center">1,410</span>
                     </div>

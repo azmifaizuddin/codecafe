@@ -93,13 +93,22 @@
     transform: scale(1.1);
 }
 
-@media (max-width: 640px), handheld and (orientation: portrait) {
+.brand-text-left,
+.brand-text {
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 640px) {
     /* Search Box */
     .has-search .form-control,
     .form-group {
-        width: 360px;
+        width: 290px;
     }
     .form-group {
         padding-top: 16px;
+    }
+
+    .navbar {
+        max-height: 70px;
     }
 }

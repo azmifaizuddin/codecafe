@@ -17,8 +17,9 @@ class CreateQuestionsTable extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->string('content', 255);
-            $table->string('tag');
+            $table->longText('content');
+            $table->unsignedBigInteger('category')->nullable();
+            $table->foreign('category')->references('id')->on('categories');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });

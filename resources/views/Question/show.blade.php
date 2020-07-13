@@ -8,9 +8,9 @@
 </div>
 @endif
     <div class="card">
-        <h5 class="card-header">#{{ $question->id }}.	&nbsp; <a href="/jawaban/{{ $question->id }}">{{ $question->judul }}</a> &nbsp; <a href="/pertanyaan/{{ $question->id }}/edit" class="btn-sm text-success ml-auto" data-toggle="tooltip" data-placement="top" title="Ubah" ><i class="fa fa-edit" aria-hidden="true"></i></a></h5>
+        <h5 class="card-header">#{{ $question->id }}.	&nbsp; <a href="/jawaban/{{ $question->id }}">{{ $question->title }}</a> &nbsp; <a href="/pertanyaan/{{ $question->id }}/edit" class="btn-sm text-success ml-auto" data-toggle="tooltip" data-placement="top" title="Ubah" ><i class="fa fa-edit" aria-hidden="true"></i></a></h5>
         <div class="card-body">
-        <p class="card-text">{{ $question->isi }}</p>
+        <p class="card-text">{{ $question->content }}</p>
     </div>
     <div class="card-footer text-muted">
         <span>Tanggal dibuat : {{ $question->created_at }}</span>

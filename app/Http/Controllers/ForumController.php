@@ -19,21 +19,21 @@ class ForumController extends Controller
         $questions = ForumModel::when($request->keyword, function ($query) use ($request) {
             $query->where('title', 'like', "%{$request->keyword}%")
                 ->orWhere('content', 'like', "%{$request->keyword}%")
-                ->orWhere('tag', 'like', "%{$request->keyword}%");
+                ->orWhere('category', 'like', "%{$request->keyword}%");
         })->paginate(10);
 
         return view('forum.index', compact('questions'));
     }
 
-    public function tag()
+    public function category()
     {
-        $tags = ForumModel::all();
-        return view('tag.index', compact('tags'));
+        $categories = ForumModel::all();
+        return view('category.index', compact('categories'));
     }
 
-    public function tag_view($tag)
+    public function category_view($category)
     {
-        $tags = ForumModel::find_tag($tag);
-        return view('tag.show', compact('tags'));
+        $categories = ForumModel::find_category($category);
+        return view('category.show', compact('categories'));
     }
 }

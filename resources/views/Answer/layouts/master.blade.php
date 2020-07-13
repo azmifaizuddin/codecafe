@@ -56,7 +56,7 @@
                             <input type="text" name="keyword" class="form-control" placeholder="Search">
                         </div>
                     </form>
-                
+                </div>
 
                 <!-- Right navbar links -->
                 <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
@@ -80,7 +80,6 @@
                     </li>
                     @endguest
                 </ul>
-            </div>
             </div>
         </nav>
         <!-- /.navbar -->
